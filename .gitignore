@@ -1,1 +1,5 @@
 *.suo
+TomTom.DataAccess/bin/
+TomTom.DataAccess/obj/
+TomTom.Domain/bin/
+TomTom.Domain/obj/
