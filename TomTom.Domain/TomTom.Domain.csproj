@@ -39,6 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\RecordType.cs" />
+    <Compile Include="Model\DeletedRecord.cs" />
+    <Compile Include="Model\ExtendedRecord.cs" />
+    <Compile Include="Model\Record.cs" />
+    <Compile Include="Model\SimpleRecord.cs" />
+    <Compile Include="Model\SkipperRecord.cs" />
+    <Compile Include="Model\SkupperRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
