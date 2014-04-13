@@ -28,5 +28,7 @@ namespace TomTom.Domain.Model
             }
             return null;
         }
+
+        protected Stream _stream;
     }
 }

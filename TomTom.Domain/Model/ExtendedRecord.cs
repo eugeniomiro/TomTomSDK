@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
 namespace TomTom.Domain.Model
 {
-    public class ExtendedRecord : Record
+    public class ExtendedRecord : SimpleRecord
     {
-        private   System.IO.Stream stream;
-
-        public ExtendedRecord(System.IO.Stream stream)
+        public ExtendedRecord(Stream stream)
+            : base(stream)
         {
-            // TODO: Complete member initialization
-            this.stream = stream;
+            using (var reader = new BinaryReader(_stream)) {
+                
+            }
         }
+        Guid _id;
     }
 }
