@@ -10,13 +10,11 @@ namespace TomTom.Domain.Model
     {
         public DeletedRecord(Stream stream)
         {
-            _stream = stream;
-
-            using (var reader = new BinaryReader(_stream)) {
-                _length = reader.ReadInt32();
-                _stream.Seek(_length - sizeof(Byte) - sizeof(Int32), SeekOrigin.Current);
+            using (var reader = new BinaryReader(stream)) {
+                Length = reader.ReadInt32();
+                stream.Seek(Length - sizeof(Byte) - sizeof(Int32), SeekOrigin.Current);
             }
         }
-        private Int32 _length;
+        public  Int32 Length { get; set; }
     }
 }

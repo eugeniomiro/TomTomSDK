@@ -11,10 +11,10 @@ namespace TomTom.Domain.Model
         public ExtendedRecord(Stream stream)
             : base(stream)
         {
-            using (var reader = new BinaryReader(_stream)) {
+            using (var reader = new BinaryReader(stream)) {
                 
             }
         }
-        Guid _id;
+        public Guid Id { get; set; }
     }
 }

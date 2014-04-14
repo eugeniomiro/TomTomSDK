@@ -10,19 +10,18 @@ namespace TomTom.Domain.Model
     {
         public SkipperRecord(Stream stream)
         {
-            _stream = stream;
             using(var reader = new BinaryReader(stream)) {
-                _bytesInFile = reader.ReadInt32();
-                _x1 = reader.ReadInt32();
-                _y1 = reader.ReadInt32();
-                _x2 = reader.ReadInt32();
-                _y2 = reader.ReadInt32();
+                BytesInFile = reader.ReadInt32();
+                X1 = reader.ReadInt32();
+                Y1 = reader.ReadInt32();
+                X2 = reader.ReadInt32();
+                Y2 = reader.ReadInt32();
             }
         }
-        private  int _bytesInFile;
-        private  int _x1;
-        private  int _y1;
-        private  int _x2;
-        private  int _y2;
+        public  int BytesInFile { get; set; }
+        public  int X1          { get; set; }
+        public  int Y1          { get; set; }
+        public  int X2          { get; set; }
+        public  int Y2          { get; set; }
     }
 }
