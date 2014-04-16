@@ -3,3 +3,5 @@ TomTom.DataAccess/bin/
 TomTom.DataAccess/obj/
 TomTom.Domain/bin/
 TomTom.Domain/obj/
+TomTom.Services/obj/
+TomTom.Services/bin/
