@@ -5,3 +5,5 @@ TomTom.Domain/bin/
 TomTom.Domain/obj/
 TomTom.Services/obj/
 TomTom.Services/bin/
+TomTom.UI.Console/bin/
+TomTom.UI.Console/obj/
